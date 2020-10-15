@@ -7,6 +7,9 @@ footer {
     width: 90%;
     max-width: 1440px;
     margin: 0 auto;
+    .footer-items {
+      display: none;
+    }
     ul.footer-list {
       li.footer-contents {
         padding: 0.5rem 0;
@@ -118,6 +121,9 @@ footer {
   footer {
     .footer-inner {
       display: flex;
+      .footer-items {
+        display: block;
+      }
       div.footer-items {
         width: 40%;
         .footer-icon {
