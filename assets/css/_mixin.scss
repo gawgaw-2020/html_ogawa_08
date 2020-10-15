@@ -1,19 +1,10 @@
-// #E3E3E3　購入ナビボックス
-// #707070　商品テキスト
-// #FFFFFF　背景１
-// #978332　アクセント１
-// #FFFEEB　背景２
-// #479E9F　アクセント２
-// #333333　基本テキスト
-// #000000 (80%)　heroボックス
-// #E3E3E3 (90%)　グレーボックス
-
 
 // color palette
 
 $color-header__background: #333;
 $color-header__text: #fff;
 $color-header__ham-icon-background: #fff;
+
 $color-btn-ok__background: #479E9F;
 $color-btn-ok__text: #fff;
 $color-btn-ok__border: transparent;
@@ -35,7 +26,10 @@ $color-labal-current__text: #978332;
 $color-labal-current__border: #978332;
 $color-labal-not-active__background: #e3e3e3;
 $color-labal-not-active__text: #fff;
-$color-labal-not-active__border: #707070;
+
+$color-footer__background: #e3e3e3;
+$color-footer__text: #707070;
+$color-footer__border: #707070;
 
 
 // break point
