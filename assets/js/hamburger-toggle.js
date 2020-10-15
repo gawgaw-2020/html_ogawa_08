@@ -1,21 +1,25 @@
 const ham = document.getElementById('ham');
 const menu = document.getElementById('menu');
-const about = document.getElementById('js-about');
-const contact = document.getElementById('js-contact');
+
+const gbMenuItem = document.querySelectorAll('.js-gb-menu-item');
 
 function toggleClicked() {
   ham.classList.toggle('clicked');
   menu.classList.toggle('clicked');
 };
 
+console.log(gbMenuItem);
+
 ham.addEventListener('click', () => {
   toggleClicked();
 });
-
-about.addEventListener('click', () =>{
+menu.addEventListener('click', () => {
   toggleClicked();
 });
 
-contact.addEventListener('click', () => {
-  toggleClicked();
+gbMenuItem.forEach((el) => {
+  el.addEventListener('click', (event) => {
+    toggleClicked();
+    event.stopPropagation();
+  });
 });

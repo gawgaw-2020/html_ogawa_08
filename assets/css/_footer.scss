@@ -40,6 +40,7 @@ footer {
             height: 3.6rem;
             padding: 0.5rem;
             a {
+              opacity: 1;
               display: inline-block;
               width: 100%;
             }
@@ -55,7 +56,9 @@ footer {
               overflow: hidden;
               transition-duration: 0.35s;
               a {
+                opacity: 0;
                 color: $color-footer__text;
+                transition: .8s;
               }
           }
         }
@@ -92,15 +95,11 @@ footer {
             li {
               height: auto;
               padding: 0.5rem;
-              opacity: 1;
-              }
               a {
                 display: inline-block;
-                color: #fff;
                 width: 100%;
                 transition: all 0.2s;
-                &:hover {
-                  color: gold;  
+                opacity: 1;
               }
             }
           }

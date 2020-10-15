@@ -543,6 +543,7 @@ footer .footer-inner ul.footer-list li.footer-contents input:checked ~ ul.conten
 }
 
 footer .footer-inner ul.footer-list li.footer-contents input:checked ~ ul.content-list li a {
+  opacity: 1;
   display: inline-block;
   width: 100%;
 }
@@ -561,7 +562,10 @@ footer .footer-inner ul.footer-list li.footer-contents ul.content-list li {
 }
 
 footer .footer-inner ul.footer-list li.footer-contents ul.content-list li a {
+  opacity: 0;
   color: #707070;
+  -webkit-transition: .8s;
+  transition: .8s;
 }
 
 footer .copyright {
@@ -594,17 +598,13 @@ footer .copyright {
   footer .footer-inner ul.footer-list li.footer-contents ul.content-list li {
     height: auto;
     padding: 0.5rem;
-    opacity: 1;
   }
-  footer .footer-inner ul.footer-list li.footer-contents ul.content-list a {
+  footer .footer-inner ul.footer-list li.footer-contents ul.content-list li a {
     display: inline-block;
-    color: #fff;
     width: 100%;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
-  }
-  footer .footer-inner ul.footer-list li.footer-contents ul.content-list a:hover {
-    color: gold;
+    opacity: 1;
   }
   footer .copyright {
     text-align: center;
