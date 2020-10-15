@@ -3,7 +3,7 @@
   position: sticky;
   top: 0;
   z-index: 9999;
-  background-color: #fff;
+  background-color: $color-header__background;
   .header-inner {
     position: relative;
     .product-logo {
@@ -131,4 +131,65 @@
         transition-duration: 0.35s;
     }
   }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    z-index: 22222;
+    .header-inner {
+      width: 95%;
+      max-width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      .product-logo {
+        width: 400px;
+      }
+      .ham {
+        display: none;
+      }
+      nav.header__nav-top {
+        opacity: 1;
+        height: 60px;
+        transform: translate(0);
+        background-color: transparent;
+        font-size: 1.6rem;
+        position: static;
+        .balloon {
+          display: none;
+        }
+        .gb-menu {
+          width: auto;
+          display: flex;
+          padding: 0;
+          justify-content: flex-end;
+          position: static;
+          li {
+            height: 58px;
+            transition: .3s;
+            margin-bottom: 0;
+            &:hover {
+              text-shadow: 0 2px 2px #bbb;
+              background-color: rgba(192, 192, 192, 0.3);
+              box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+            }
+            a {
+              display: inline-block;
+              line-height: 60px;
+              padding: 0 24px 0 ;
+              span {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
