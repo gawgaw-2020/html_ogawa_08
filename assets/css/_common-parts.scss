@@ -14,29 +14,77 @@
 }
 
 .btn {
+  display: block;
+  text-align: center;
   font-size: 1.6rem;
-  font-weight: bold;
-  width: 100%;
   padding: 0.5em 1em;
   background-color: transparent;
-  border-radius: 2em;
   transition: .4s;
-  color: #333;
-  border: 2px solid #fff;
-  &--orange {
-    color: #fff;
-    background-color: #F99F48;
+  border: 1px solid transparent;
+  &--ok {
+    color: $color-btn-ok__text;
+    background-color:$color-btn-ok__background;
+    border-color: $color-btn-ok__border;
     &:hover {
-      background-color: rgba(249, 159, 72, 0.8);
+      background-color: lighten($color-btn-ok__background, 15%);
     }
   }
-  &--dark {
-    color: #fff;
-    background-color: #1B435D;
+  &--back {
+    color: $color-btn-back__text;
+    background-color:$color-btn-back__background;
+    border-color: $color-btn-back__border;
     &:hover {
-      background-color:rgba(27, 67, 93, 0.8);
+      background-color: lighten($color-btn-back__background, 15%);
     }
+  }
+  &--detail {
+    color: $color-btn-detail__text;
+    background-color:$color-btn-detail__background;
+    border-color: $color-btn-detail__border;
+    position: relative;
+    &::before {
+      content: '';
+      width: 25%;
+      position: absolute;
+      top: 50%;
+      left: -20%;
+      border-bottom: 1px solid $color-btn-detail__border;
+      transition: 0.4s;
+    }
+    &:hover::before {
+      left: -6%;
+    }
+  }
+  &--operationcart {
+    color: $color-btn-addcart__text;
+    background-color:$color-btn-addcart__background;
+    border-color: $color-btn-addcart__border;
+    border-width: 2px;
+    font-weight: bold;
+    &:hover {
+      background-color: darken($color-btn-addcart__background, 5%);
+    }
+  }
 
+}
+
+.label {
+  text-align: center;
+  &--price{
+    color: $color-labal-detail__text;
+    background-color: $color-labal-detail__background;
+    padding: 0.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  &--current {
+    color: $color-labal-current__text;
+    background-color: $color-labal-current__background;
+    border: 2px solid $color-labal-current__border;
+  }
+  &--not-active {
+    color: $color-labal-not-active__text;
+    background-color: $color-labal-not-active__background;
   }
 }
 

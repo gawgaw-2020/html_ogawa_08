@@ -1,6 +1,41 @@
+// #E3E3E3　購入ナビボックス
+// #707070　商品テキスト
+// #FFFFFF　背景１
+// #978332　アクセント１
+// #FFFEEB　背景２
+// #479E9F　アクセント２
+// #333333　基本テキスト
+// #000000 (80%)　heroボックス
+// #E3E3E3 (90%)　グレーボックス
+
+
 // color palette
 
-$color-header__background: #e7d259;
+$color-header__background: #333;
+$color-header__text: #fff;
+$color-header__ham-icon-background: #fff;
+$color-btn-ok__background: #479E9F;
+$color-btn-ok__text: #fff;
+$color-btn-ok__border: transparent;
+$color-btn-back__background: #333;
+$color-btn-back__text: #fff;
+$color-btn-back__border: transparent;
+$color-btn-detail__background: transparent;
+$color-btn-detail__text: #707070;
+$color-btn-detail__border: #707070;
+$color-btn-addcart__background: #fff;
+$color-btn-addcart__text: #479E9F;
+$color-btn-addcart__border: #479E9F;
+
+$color-labal-detail__background: #978332;
+$color-labal-detail__text: #fff;
+$color-labal-detail__border: #707070;
+$color-labal-current__background: #fff;
+$color-labal-current__text: #978332;
+$color-labal-current__border: #978332;
+$color-labal-not-active__background: #e3e3e3;
+$color-labal-not-active__text: #fff;
+$color-labal-not-active__border: #707070;
 
 
 // break point

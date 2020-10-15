@@ -129,34 +129,91 @@ img {
 }
 
 .btn {
+  display: block;
+  text-align: center;
   font-size: 1.6rem;
-  font-weight: bold;
-  width: 100%;
   padding: 0.5em 1em;
   background-color: transparent;
-  border-radius: 2em;
   -webkit-transition: .4s;
   transition: .4s;
-  color: #333;
-  border: 2px solid #fff;
+  border: 1px solid transparent;
 }
 
-.btn--orange {
+.btn--ok {
   color: #fff;
-  background-color: #F99F48;
+  background-color: #479E9F;
+  border-color: transparent;
 }
 
-.btn--orange:hover {
-  background-color: rgba(249, 159, 72, 0.8);
+.btn--ok:hover {
+  background-color: #72bfc0;
 }
 
-.btn--dark {
+.btn--back {
   color: #fff;
-  background-color: #1B435D;
+  background-color: #333;
+  border-color: transparent;
 }
 
-.btn--dark:hover {
-  background-color: rgba(27, 67, 93, 0.8);
+.btn--back:hover {
+  background-color: #595959;
+}
+
+.btn--detail {
+  color: #707070;
+  background-color: transparent;
+  border-color: #707070;
+  position: relative;
+}
+
+.btn--detail::before {
+  content: '';
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  left: -20%;
+  border-bottom: 1px solid #707070;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.btn--detail:hover::before {
+  left: -6%;
+}
+
+.btn--operationcart {
+  color: #479E9F;
+  background-color: #fff;
+  border-color: #479E9F;
+  border-width: 2px;
+  font-weight: bold;
+}
+
+.btn--operationcart:hover {
+  background-color: #f2f2f2;
+}
+
+.label {
+  text-align: center;
+}
+
+.label--price {
+  color: #fff;
+  background-color: #978332;
+  padding: 0.5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.label--current {
+  color: #978332;
+  background-color: #fff;
+  border: 2px solid #978332;
+}
+
+.label--not-active {
+  color: #fff;
+  background-color: #e3e3e3;
 }
 
 .anchor {
@@ -195,7 +252,7 @@ img {
   position: sticky;
   top: 0;
   z-index: 9999;
-  background-color: #e7d259;
+  background-color: #333;
 }
 
 .header .header-inner {
@@ -209,6 +266,7 @@ img {
 }
 
 .header .header-inner .product-logo a {
+  color: #fff;
   font-size: 1.8rem;
   display: block;
   line-height: 60px;
@@ -229,11 +287,11 @@ img {
   left: 5px;
   width: 30px;
   height: 2px;
-  background-color: #333;
+  background-color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  -webkit-box-shadow: 1px 1px 3px #333;
-          box-shadow: 1px 1px 3px #333;
+  -webkit-box-shadow: 1px 1px 3px #fff;
+          box-shadow: 1px 1px 3px #fff;
 }
 
 .header .header-inner .ham span:first-child {
@@ -271,7 +329,7 @@ img {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: rgba(192, 192, 192, 0.9);
+  background-color: rgba(51, 51, 51, 0.9);
   width: 90%;
   height: 100vh;
   font-size: 2.2rem;
@@ -296,8 +354,8 @@ img {
 }
 
 .header .header-inner nav.header__nav-top .balloon .faceicon h1 {
+  font-size: 1.6rem;
   width: 80%;
-  border-radius: 50%;
   overflow: hidden;
   position: absolute;
   top: 50%;
@@ -339,9 +397,12 @@ img {
 
 .header .header-inner nav.header__nav-top ul li {
   margin-bottom: 2.4rem;
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
   font-size: 1.6rem;
+}
+
+.header .header-inner nav.header__nav-top ul li a {
+  color: #fff;
 }
 
 .header .header-inner nav.header__nav-top ul span {
@@ -360,7 +421,6 @@ img {
 @media screen and (min-width: 768px) {
   .header {
     border: 1px solid #ddd;
-    background-color: rgba(255, 255, 255, 0.9);
     width: 100%;
     height: 60px;
     position: -webkit-sticky;
