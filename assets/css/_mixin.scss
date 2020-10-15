@@ -1,5 +1,25 @@
-$bgcolor: blue;
+// color palette
 
-body {
-  background-color: red;
+$color-light-side__text: #e7d259;
+$color-light-side__border: #C2CBA2;
+$color-light-side__background: rgba(129, 224, 137, 0.137);
+$color-dark-side__text: #c5c5c5;
+$color-dark-side__border: #D1382C;
+$color-dark-side__background: rgba(226, 62, 62, 0.137);
+
+
+// break point
+
+$breakpoints: (
+  'sm': 'screen and (min-width: 400px)',
+  'md': 'screen and (min-width: 768px)',
+  'lg': 'screen and (min-width: 1000px)',
+  'xl': 'screen and (min-width: 1200px)',
+) !default;
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
 }
+

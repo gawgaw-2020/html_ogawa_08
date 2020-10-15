@@ -1,0 +1,134 @@
+.header {
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #fff;
+  .header-inner {
+    position: relative;
+    .product-logo {
+      width: 300px;
+      font-family: AmericanTypewriter, serif;
+      padding-left: 16px;
+      a {
+        font-size: 1.8rem;
+        display: block;
+        line-height: 60px;
+      }
+    }
+    //ここからハンバーガーメニュー
+    .ham {
+      z-index: 10000;
+      position: fixed;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      top: 10px;
+      right: 5%;
+      span {
+        position: absolute;
+        left: 5px;
+        width: 30px;
+        height: 2px;
+        background-color: #333;
+        transition: all 0.3s;
+        box-shadow: 1px 1px 3px #333;
+        &:first-child {
+          top: 5px;
+        }
+        &:nth-child(2) {
+          top: 19px;
+        }
+        &:last-child {
+          bottom: 5px;
+        }
+      }
+    }
+    .clicked span:first-child {
+      transform: rotate(45deg);
+      top: 16px;
+    }
+    .clicked span:nth-child(2) {
+      width: 0px;
+    } 
+    .clicked span:last-child {
+      transform: rotate(-45deg);
+      top: 16px;
+    }
+    //ここまでハンバーガーメニュー
+    nav.header__nav-top {
+      z-index: 100;
+      transform: translate(100%);
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: rgba(192, 192, 192, 0.9);
+      width: 90%;
+      height: 100vh;
+      font-size: 2.2rem;
+      opacity: 0;
+      transition-duration: 0.35s;
+      .balloon {
+        width: 100%;
+        display: flex;
+        padding: 48px 0 0;
+        margin-bottom: 16px;
+        .faceicon {
+          width: 20%;
+          position: relative;
+          margin-right: 5px;
+          h1 {
+            width: 80%;
+            border-radius: 50%;
+            overflow: hidden;
+            position: absolute;
+            top: 50%;
+            left: 65%;
+            transform: translateY(-50%) translateX(-50%);
+          }
+        }
+        .chatting {
+          width: 85%;
+          padding: 1.6rem 1.6rem;
+          .says {
+            border-radius: 1.2rem;
+            background: #D5EEFF;
+            position: relative;
+            &:after {
+              content: "";
+              display: inline-block;
+              position: absolute;
+              top: 40%;
+              left: -24px;
+              border: 12px solid transparent;
+              border-right: 12px solid #D5EEFF;
+            }
+            p {
+              font-size: 1.4rem;
+              padding: 1rem 1.6rem;
+              line-height: 1.4;
+            }
+          }
+        }
+      }
+      ul {
+        padding: 0 2.4rem;
+        li {
+          margin-bottom: 2.4rem;
+          text-shadow: 0 0 8px rgba(255,255,255,.8);
+          text-transform: uppercase;
+          font-size: 1.6rem;
+          }
+          span {
+            margin-left: 1rem;
+            font-size: 1.2rem;
+          }
+        }
+      }
+      nav.header__nav-top.clicked {
+        opacity: 1;
+        transform: translate(0);
+        transition-duration: 0.35s;
+    }
+  }
+}

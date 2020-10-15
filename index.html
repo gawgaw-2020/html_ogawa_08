@@ -1,25 +1,71 @@
 <!DOCTYPE html>
 <html lang="ja">
-<!-- 最初の設定は終わっています　必要な方は触ってください -->
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>チーズアカデミー</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <title>ページタイトル</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<!-- 最初の設定は終わっています　必要な方は触ってください -->
-
 <body>
-  <!-- この中に記述していく -->
-  <!-- ここから下にコードを書く -->
-
-  <!-- ここから上にコードを書く -->
-  <!-- この中に記述していく -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="js/main.js"></script>
+  <header class="header">
+    <div class="header-inner">
+      <div class="product-logo">
+        <a href="/" target="_self">
+          ”Always Ask “Why me ?”
+        </a>
+      </div>
+      <!-- Navigation toggle button for Smartphone-->
+      <div class="ham" id="ham">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="menu" class="header__nav-top">
+        <div class="balloon">
+          <div class="faceicon">
+            <h1  class="product-logo-sp">
+              <a href="/" target="_self">
+                <img alt="小川拓也のロゴ" src="asset/img/common/my-pic.jpeg" />
+              </a>
+            </h1>
+          </div>
+          <div class="chatting">
+            <div class="says">
+              <p>
+                こんにちは！Lab10期のおがちゃんです！
+                <br>
+                ぜひ一緒に朝活しましょう!!
+              </p>
+            </div>
+          </div>
+        </div>
+        <ul class="gb-menu">
+          <li><a id="js-about" href="#about" target="_self"><i class="fas fa-user-circle"></i>About<span>-自己紹介-</span></a></li>
+          <li><a id="js-contact" href="#contact" target="_self"><i class="fas fa-envelope-open-text"></i>Contact<span>-お問い合わせ-</span></a></li>
+          <li><a href="https://twitter.com/gawgaw_2020"  target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i>Twitter<span>-お気軽にフォローしてください-</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="view-first">
+        <video src="asset/img/top/first-view.mp4" autoplay muted loop playsinline poster="asset/img/top/fv-ready.png"></video>
+        <div class="view-first-contents">
+          <h2>
+            <span>t</span>akuya <span>o</span>gawa
+            <p>＼ JavaScriptの森で迷子中 ／</p>
+          </h2>
+          <p>Lab10期 コード書くぞー!!</p>
+        </div>
+        <a class="scroll" href="#about"><span></span>Scroll</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    Lorem ipsum dolor sit amet.
+  </footer>
 </body>
-
+<script src="assets/js/hamburger-toggle.js"></script>
 </html>

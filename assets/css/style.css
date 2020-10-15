@@ -1,20 +1,359 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
 body {
-  background-color: red;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
-  background-color: red;
+  font-size: 1.0rem;
+  color: #333;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  letter-spacing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  background-color: red;
+a {
+  color: #333;
+  text-decoration: none;
 }
 
-body {
-  background-color: red;
+img {
+  width: 100%;
+  height: auto;
 }
 
-body {
-  background-color: blue;
+.section-heading {
+  font-family: AmericanTypewriter, serif;
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 16px 0;
+  margin: 24px;
+}
+
+.section-inner {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 32px;
+  padding-bottom: 64px;
+}
+
+.btn {
+  font-size: 1.6rem;
+  font-weight: bold;
+  width: 100%;
+  padding: 0.5em 1em;
+  background-color: transparent;
+  border-radius: 2em;
+  -webkit-transition: .4s;
+  transition: .4s;
+  color: #333;
+  border: 2px solid #fff;
+}
+
+.btn--orange {
+  color: #fff;
+  background-color: #F99F48;
+}
+
+.btn--orange:hover {
+  background-color: rgba(249, 159, 72, 0.8);
+}
+
+.btn--dark {
+  color: #fff;
+  background-color: #1B435D;
+}
+
+.btn--dark:hover {
+  background-color: rgba(27, 67, 93, 0.8);
+}
+
+.anchor {
+  padding-top: 60px;
+  margin-top: -60px;
+}
+
+.card {
+  width: 320px;
+  height: 450px;
+  background-color: #1B435D;
+  border-radius: 10px;
+  color: #fff;
+  margin: 0 16px 16px 0;
+}
+
+.card__title {
+  padding: 0.5em 0;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.card__img {
+  height: 200px;
+  overflow: hidden;
+}
+
+.card__text {
+  font-size: 1.6rem;
+  padding: 1em;
+}
+
+.header {
+  height: 60px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #fff;
+}
+
+.header .header-inner {
+  position: relative;
+}
+
+.header .header-inner .product-logo {
+  width: 300px;
+  font-family: AmericanTypewriter, serif;
+  padding-left: 16px;
+}
+
+.header .header-inner .product-logo a {
+  font-size: 1.8rem;
+  display: block;
+  line-height: 60px;
+}
+
+.header .header-inner .ham {
+  z-index: 10000;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  top: 10px;
+  right: 5%;
+}
+
+.header .header-inner .ham span {
+  position: absolute;
+  left: 5px;
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: 1px 1px 3px #333;
+          box-shadow: 1px 1px 3px #333;
+}
+
+.header .header-inner .ham span:first-child {
+  top: 5px;
+}
+
+.header .header-inner .ham span:nth-child(2) {
+  top: 19px;
+}
+
+.header .header-inner .ham span:last-child {
+  bottom: 5px;
+}
+
+.header .header-inner .clicked span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 16px;
+}
+
+.header .header-inner .clicked span:nth-child(2) {
+  width: 0px;
+}
+
+.header .header-inner .clicked span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 16px;
+}
+
+.header .header-inner nav.header__nav-top {
+  z-index: 100;
+  -webkit-transform: translate(100%);
+          transform: translate(100%);
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(192, 192, 192, 0.9);
+  width: 90%;
+  height: 100vh;
+  font-size: 2.2rem;
+  opacity: 0;
+  -webkit-transition-duration: 0.35s;
+          transition-duration: 0.35s;
+}
+
+.header .header-inner nav.header__nav-top .balloon {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 48px 0 0;
+  margin-bottom: 16px;
+}
+
+.header .header-inner nav.header__nav-top .balloon .faceicon {
+  width: 20%;
+  position: relative;
+  margin-right: 5px;
+}
+
+.header .header-inner nav.header__nav-top .balloon .faceicon h1 {
+  width: 80%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+}
+
+.header .header-inner nav.header__nav-top .balloon .chatting {
+  width: 85%;
+  padding: 1.6rem 1.6rem;
+}
+
+.header .header-inner nav.header__nav-top .balloon .chatting .says {
+  border-radius: 1.2rem;
+  background: #D5EEFF;
+  position: relative;
+}
+
+.header .header-inner nav.header__nav-top .balloon .chatting .says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #D5EEFF;
+}
+
+.header .header-inner nav.header__nav-top .balloon .chatting .says p {
+  font-size: 1.4rem;
+  padding: 1rem 1.6rem;
+  line-height: 1.4;
+}
+
+.header .header-inner nav.header__nav-top ul {
+  padding: 0 2.4rem;
+}
+
+.header .header-inner nav.header__nav-top ul li {
+  margin-bottom: 2.4rem;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+.header .header-inner nav.header__nav-top ul span {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+
+.header .header-inner nav.header__nav-top.clicked {
+  opacity: 1;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  -webkit-transition-duration: 0.35s;
+          transition-duration: 0.35s;
 }
 /*# sourceMappingURL=style.css.map */
