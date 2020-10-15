@@ -5,9 +5,9 @@
   z-index: 9999;
   background-color: $color-header__background;
   .header-inner {
+    display: flex;
     position: relative;
     .product-logo {
-      width: 300px;
       font-family: AmericanTypewriter, serif;
       padding-left: 16px;
       a {
