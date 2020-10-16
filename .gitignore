@@ -1,3 +1,4 @@
 cheese-img/
-
+*.png
 .DS_Store
+*.jpg
