@@ -10,6 +10,8 @@ $color-fv-box__text: #fff;
 
 $color-introduce-section__background: rgba(255, 254, 235, 0.6);
 
+$color-item-list__text: #707070;
+
 $color-btn-ok__background: #479E9F;
 $color-btn-ok__text: #fff;
 $color-btn-ok__border: transparent;
@@ -44,6 +46,7 @@ $breakpoints: (
   'md': 'screen and (min-width: 768px)',
   'lg': 'screen and (min-width: 1000px)',
   'xl': 'screen and (min-width: 1200px)',
+  'xxl': 'screen and (min-width: 1920px)',
 ) !default;
 
 @mixin mq($breakpoint: md) {

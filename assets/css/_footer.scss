@@ -100,6 +100,21 @@ footer {
                 width: 100%;
                 transition: all 0.2s;
                 opacity: 1;
+                position: relative;
+                &::after {
+                  background-color: $color-footer__border;
+                  bottom: 0;
+                  content: '';
+                  display: block;
+                  height: 1px;
+                  left: 0;
+                  position: absolute;
+                  transition: .3s all;
+                  width: 0;
+                }
+                &:hover::after {
+                  width: 50%;
+                }
               }
             }
           }

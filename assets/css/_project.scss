@@ -16,6 +16,10 @@
       background-image: url(../../tab-kv@2x.jpg);
         height: calc(100vh - 60px);
       }
+      @include mq(xl) {
+      background-image: url(../../kv-pc@2x.jpg);
+        height: calc(100vh - 60px);
+      }
     }
     &--02 {
       background-image: url(../../kv02@2x@2x.png);
@@ -33,6 +37,13 @@
       left: 50%;
       transform: translateX(-50%);
     }
+    @include mq(xl) {
+      bottom: auto;
+      top: 50%;
+      transform: translateY(-50%);
+      left: auto;
+      right: 5%;
+    }  
     .fv-box {
       height: 100%;
       background-color: $color-fv-box__background;
@@ -51,6 +62,9 @@
           font-size: 2.4rem;
           margin-bottom: 1.6rem;
         }
+        @include mq(xl) {
+          font-size: 3.2rem;
+        }
       }
       &__text {
         font-size: 2.4rem;
@@ -67,10 +81,16 @@
       &__btn {
         width: 90%;
         margin: 0 auto;
-        padding: 0.8em 0;
+        padding: 0.6em 0;
+        @include mq(sm) {
+          width: 50%;
+        }
         @include mq() {
           width: 300px;
           margin: 0 16px 0 0;
+        }
+        @include mq(xl) {
+          font-size: 2.4rem;
         }
       }
       &__btn.btn--back {
@@ -87,6 +107,12 @@
   background-color: $color-introduce-section__background;
   &__content {
     margin: 32px 0;
+    @include mq() {
+      margin: 32px 0 80px;
+    }
+    @include mq(xl) {
+      margin: 32px 0 240px;
+    }
     .introduce-box {
       position: relative;
       &__text {
@@ -94,6 +120,12 @@
         width: 80%;
         margin-left: auto;
         line-height: 56px;
+        @include mq() {
+          width: 55%;
+        }
+        @include mq(xl) {
+          padding-top: 80px;
+        }
       }
       &__image {
         width: 80%;
@@ -101,17 +133,108 @@
         z-index: -1;
         top: 50%;
         transform: translateY(-50%);
+        @include mq(sm) {
+          width: 60%;
+        }  
+        @include mq() {
+          top: 0;
+          transform: initial;
+          width: 70%;
+        }
+        @include mq(lg) {
+          width: 40%;
+          z-index: initial;
+        }
       }
     }
     &:nth-of-type(even) .introduce-box {
       &__text {
         margin-left: 0;
         margin-right: auto;
+        @include mq(xl) {
+          padding-top: 80px;
+        }
       }
       &__image {
         right: 0;
         top: 70%;
+        @include mq() {
+          top: 30%;
+          width: 60%;
+        }
+        @include mq(lg) {
+          width: 40%;
+          z-index: initial;
+        }
       }
     }
   }
 }
+
+.part-of-item {
+  &__list {
+    width: 90%;
+    margin: 0 auto;
+    @include mq(sm) {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 300px;
+    }
+    @include mq(md) {
+      max-width: 700px;
+    }
+    @include mq(lg) {
+      max-width: 900px;
+    }
+    @include mq(xl) {
+      max-width: 1400px;
+    }
+    @include mq(xxl) {
+      max-width: 1800px;
+    }
+    .topitem-card {
+      color: $color-item-list__text;
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto 64px;
+      @include mq(sm) {
+        padding: 0 8px;
+        margin: 0 0 64px;
+      }
+      @include mq(lg) {
+        padding: 0 16px;
+        margin-bottom: 80px;
+      }
+      @include mq(xl) {
+        width: auto;
+      }
+      &__image {
+        margin-bottom: 12px;
+      }
+      &__title {
+        text-align: center;
+        margin-bottom: 12px;
+      }
+      &__price {
+        width: 180px;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        margin-bottom: 16px;
+      }
+      &__btn {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+  }
+  &__btn {
+    margin-bottom: 120px;
+    @include mq(sm) {
+      width: 50%;
+      margin: 0 auto 120px;
+    }  
+  }
+}
+
