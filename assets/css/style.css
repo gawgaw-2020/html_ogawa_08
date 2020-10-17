@@ -816,7 +816,7 @@ footer .copyright {
 
 @media screen and (min-width: 1200px) {
   .fv__content-box .fv-box__btn {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -1033,6 +1033,13 @@ footer .copyright {
 @media screen and (min-width: 400px) {
   .part-of-item__btn {
     width: 50%;
+    margin: 0 auto 120px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .part-of-item__btn {
+    width: 30%;
     margin: 0 auto 120px;
   }
 }

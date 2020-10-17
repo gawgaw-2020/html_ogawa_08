@@ -90,7 +90,7 @@
           margin: 0 16px 0 0;
         }
         @include mq(xl) {
-          font-size: 2.4rem;
+          font-size: 2.2rem;
         }
       }
       &__btn.btn--back {
@@ -233,6 +233,10 @@
     margin-bottom: 120px;
     @include mq(sm) {
       width: 50%;
+      margin: 0 auto 120px;
+    }  
+    @include mq(lg) {
+      width: 30%;
       margin: 0 auto 120px;
     }  
   }
