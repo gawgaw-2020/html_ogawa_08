@@ -189,7 +189,7 @@
       max-width: 900px;
     }
     @include mq(xl) {
-      max-width: 1400px;
+      max-width: 1100px;
     }
     @include mq(xxl) {
       max-width: 1800px;
@@ -328,6 +328,99 @@
           margin: 0 0 0 auto;
         }
       }
+    }
+  }
+}
+
+.strength {
+  .section-inner {
+    max-width: 1000px;
+  }
+  &__list {
+    .strength-item {
+      padding: 16px 0;
+      border-top: 1px solid $color-strength-item__border;
+      border-bottom: 1px solid $color-strength-item__border;
+      margin-bottom: 88px;
+      @include mq() {
+        display: flex;
+        padding: 16px 32px;
+      }
+      &__image {
+        margin-bottom: 16px;
+        width: 95%;
+        margin: 0 auto;
+      }
+      &__text {
+        padding: 16px 0;
+        width: 95%;
+        margin: 0 auto;
+        @include mq() {
+          margin-left: 24px;
+          padding: 0;
+        }  
+      }
+    }
+  }
+}
+
+.new {
+  margin-bottom: 80px;
+  .section-inner {
+    max-width: 1200px;
+  }
+  &__list {
+    margin-bottom: 40px;
+    @include mq() {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .new-item {
+      margin-bottom: 32px;
+      @include mq() {
+        width: calc((100% - 16px) / 2);
+        margin-right: 16px;
+        @include mq(xl) {
+          width: calc((100% - 32px) / 3);
+          &:last-child {
+            margin-right: 0px;
+          }
+        }  
+        &:nth-of-type(even) {
+          margin-right: 0;
+          @include mq(xl) {
+            margin-right: 16px;
+          }
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &__label {
+        line-height: 1.7;
+        font-size: 1.2rem;
+        padding: 1em 0;
+      }
+    }
+  }
+  &__btns {
+    width: 90%;
+    margin: 0 auto;
+    @include mq() {
+      display: flex;
+      justify-content: center;
+    }
+    .btn {
+      @include mq() {
+        width: 35%;
+      }
+    }
+    .btn--ok {
+      margin-bottom: 24px;
+      @include mq() {
+        margin-bottom: 0;
+        margin-right: 24px;
+      }  
     }
   }
 }
