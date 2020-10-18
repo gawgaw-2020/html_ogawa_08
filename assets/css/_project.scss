@@ -230,7 +230,7 @@
     }
   }
   &__btn {
-    margin-bottom: 120px;
+    margin-bottom: 40px;
     @include mq(sm) {
       width: 50%;
       margin: 0 auto 120px;
@@ -242,3 +242,92 @@
   }
 }
 
+.member {
+  &__list {
+    .profile-card {
+      margin-bottom: 64px;
+      @include mq(lg) {
+        margin-bottom: 125px;
+      }
+      @include mq() {
+        display: flex;
+      }
+      &__contents {
+        @include mq() {
+          width: 60%;
+        }
+        @include mq(lg) {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+      &__tab-image {
+        display: none;
+        @include mq() {
+          display: block;
+          width: 40%;
+        }
+        @include mq(lg) {
+          display: none;
+        }
+      }
+      &__pc-image {
+        display: none;
+        @include mq(lg) {
+          display: block;
+          width: 40%;
+        }
+      }
+      &__position {
+        letter-spacing: 3px;
+        @include mq() {
+          padding: 16px 56px;
+        }
+      }
+      &__name {
+        font-size: 3.8rem;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        border-bottom: 3px solid $color-profile-card__border;
+        margin-bottom: 28px;
+        @include mq() {
+          padding-bottom: 32px;
+          margin: 0 56px 28px;
+        }
+        @include mq(lg) {
+          font-size: 4.8rem;
+        }
+      }
+      &__image {
+        margin: 0 calc(50% - 50vw);
+        width: 100vw;
+        @include mq() {
+          display: none;
+        }
+      }
+      &__text {
+        line-height: 2.5;
+        width: 100vw;
+        padding: 32px 16px;
+        background-color: $color-profile-card__background;
+        margin: 0 calc(50% - 50vw) 32px;
+        @include mq() {
+          width: auto;
+          margin: 0 0 32px;
+        }
+        @include mq(lg) {
+          padding: 32px 56px;
+        }
+      }
+      &__btn {
+        width: 75%;
+        max-width: 400px;
+        margin: 0 auto;
+        @include mq() {
+          margin: 0 0 0 auto;
+        }
+      }
+    }
+  }
+}
