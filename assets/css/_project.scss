@@ -506,3 +506,53 @@
     }
   }
 }
+
+.detail {
+  &__heading {
+    font-size: 1.8rem;
+    padding: 0;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  &__text01 {
+    padding: 2em 1em 1em;
+  }
+  &__price {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #777;
+    margin-bottom: 24px;
+  }
+  &__btn {
+    margin-bottom: 120px;
+  }
+  .push {
+    display: flex;
+    .detail__text02 {
+      width: 300px;
+      padding: 0.5em;
+    }
+    .detail__image02 {
+      &--pc {
+        display: none;
+      }
+    }
+  }
+}
+
+.detail-more {
+  background-color: $color-detail-more__background;
+  padding-bottom: 120px;
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 24px;
+  }
+  &__label {
+    width: 50%;
+    padding: 0;
+    margin-bottom: 24px;
+  }
+  &__image {
+    margin-bottom: 40px;
+  }
+}

@@ -1477,4 +1477,61 @@ footer .copyright {
     width: 60%;
   }
 }
+
+.detail__heading {
+  font-size: 1.8rem;
+  padding: 0;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.detail__text01 {
+  padding: 2em 1em 1em;
+}
+
+.detail__price {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #777;
+  margin-bottom: 24px;
+}
+
+.detail__btn {
+  margin-bottom: 120px;
+}
+
+.detail .push {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.detail .push .detail__text02 {
+  width: 300px;
+  padding: 0.5em;
+}
+
+.detail .push .detail__image02--pc {
+  display: none;
+}
+
+.detail-more {
+  background-color: rgba(255, 254, 235, 0.6);
+  padding-bottom: 120px;
+}
+
+.detail-more__title {
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+.detail-more__label {
+  width: 50%;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.detail-more__image {
+  margin-bottom: 40px;
+}
 /*# sourceMappingURL=style.css.map */
