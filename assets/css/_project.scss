@@ -362,6 +362,7 @@
         @include mq() {
           margin-left: 24px;
           padding: 0;
+          font-size: 1.8rem;
         }  
       }
     }
@@ -513,28 +514,87 @@
     padding: 0;
     margin-bottom: 16px;
     text-align: left;
+    @include mq() {
+      font-size: 2.4rem;
+      text-align: center;
+      margin-bottom: 40px;
+      @include mq(lg) {
+        font-size: 3.2rem;
+      }
+    }
+  }
+  .detail__box {
+    max-width: 1200px;
+    margin: 0 auto;
+    @include mq() {
+      display: flex;
+      margin-bottom: 80px;
+      @include mq(lg) {
+        margin-bottom: 120px;
+      }
+    }
+  }
+  &__image01 {
+    @include mq() {
+      width: 50%;
+    }
+  }
+  .detail__right {
+    @include mq() {
+      width: 50%;
+    }
+    @include mq(lg) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      font-size: 2.4rem;
+    }
   }
   &__text01 {
     padding: 2em 1em 1em;
+    @include mq() {
+      padding: 2em 3em 1em;
+    }
   }
   &__price {
     text-align: center;
     font-size: 2.4rem;
-    color: #777;
+    color: $color-detail__price-text;
     margin-bottom: 24px;
   }
   &__btn {
     margin-bottom: 120px;
+    @include mq() {
+      width: 50%;
+      margin: 0 auto;
+    }
   }
   .push {
     display: flex;
+    max-width: 800px;
+    margin: 0 auto;
     .detail__text02 {
       width: 300px;
       padding: 0.5em;
+      @include mq() {
+        padding: 2em;
+        font-size: 2.4rem;
+      }
     }
     .detail__image02 {
+      margin-left: auto;
       &--pc {
         display: none;
+        @include mq() {
+          display: block;
+          width: 50%;
+        }
+      }
+      &--sp {
+        @include mq() {
+          display: none;
+        }
       }
     }
   }
@@ -546,13 +606,31 @@
   &__title {
     font-size: 2rem;
     margin-bottom: 24px;
+    @include mq() {
+      text-align: center;
+      font-weight: bold;
+    }
   }
   &__label {
+    max-width: 200px;
     width: 50%;
     padding: 0;
     margin-bottom: 24px;
+    @include mq() {
+      margin: 0 auto 30px;
+    }
   }
   &__image {
     margin-bottom: 40px;
+    max-width: 544px;
+    margin: 0 auto 45px;
+    @include mq() {
+      margin-bottom: 60px;
+    }
+  }
+  &__btn {
+    max-width: 400px;
+    width: 50%;
+    margin: 0 auto;
   }
 }
