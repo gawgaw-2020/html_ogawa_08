@@ -1235,6 +1235,8 @@ footer .copyright {
 }
 
 .new__list {
+  width: 85%;
+  margin: 0 auto;
   margin-bottom: 40px;
 }
 
