@@ -682,25 +682,25 @@ footer .copyright {
 }
 
 .fv__pic--01 {
-  background-image: url(../../kv01@2x@2x.png);
+  background-image: url(../image/common/kv-sp01@2x.jpg);
 }
 
 @media screen and (min-width: 768px) {
   .fv__pic--01 {
-    background-image: url(../../tab-kv@2x.jpg);
+    background-image: url(../image/common/kv-tab@2x.jpg);
     height: calc(100vh - 60px);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .fv__pic--01 {
-    background-image: url(../../kv-pc@2x.jpg);
-    height: calc(100vh - 60px);
+    background-image: url(../image/common/kv-pc@2x.jpg);
   }
 }
 
 .fv__pic--02 {
-  background-image: url(../../kv02@2x@2x.png);
+  background-image: url(../image/common/kv-sp02@2x.jpg);
+  background-position: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -832,6 +832,7 @@ footer .copyright {
 
 .introduce {
   background-color: rgba(255, 254, 235, 0.6);
+  padding-bottom: 120px;
 }
 
 .introduce__content {
@@ -846,7 +847,7 @@ footer .copyright {
 
 @media screen and (min-width: 1200px) {
   .introduce__content {
-    margin: 32px 0 240px;
+    margin: 32px 0 120px;
   }
 }
 

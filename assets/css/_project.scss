@@ -11,18 +11,18 @@
     height: calc((100vh - 60px) / 3);
     background-size: cover;
     &--01 {
-      background-image: url(../../kv01@2x@2x.png);
+      background-image: url(../image/common/kv-sp01@2x.jpg);
       @include mq() {
-      background-image: url(../../tab-kv@2x.jpg);
+        background-image: url(../image/common/kv-tab@2x.jpg);
         height: calc(100vh - 60px);
       }
       @include mq(xl) {
-      background-image: url(../../kv-pc@2x.jpg);
-        height: calc(100vh - 60px);
+        background-image: url(../image/common/kv-pc@2x.jpg);
       }
     }
     &--02 {
-      background-image: url(../../kv02@2x@2x.png);
+      background-image: url(../image/common/kv-sp02@2x.jpg);
+      background-position: center;
       @include mq() {
         display: none;
       }
@@ -105,13 +105,14 @@
 
 .introduce {
   background-color: $color-introduce-section__background;
+  padding-bottom: 120px;
   &__content {
     margin: 32px 0;
     @include mq() {
       margin: 32px 0 80px;
     }
     @include mq(xl) {
-      margin: 32px 0 240px;
+      margin: 32px 0 120px;
     }
     .introduce-box {
       position: relative;
