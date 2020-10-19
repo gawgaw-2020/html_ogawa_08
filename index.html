@@ -1,52 +1,5 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ページタイトル</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-  <header class="header">
-    <div class="header-inner">
-      <div class="product-logo">
-        <a href="/" target="_self">(仮)チーズの通販サイト</a>
-      </div>
-      <!-- Navigation toggle button for Smartphone-->
-      <div class="ham" id="ham">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav id="menu" class="header__nav-top">
-        <div class="balloon">
-          <div class="faceicon">
-            <h1  class="product-logo-sp">
-              <a href="/" target="_self">
-                <img alt="お店のロゴ" src="assets/image/common/kv-pc.jpg">
-              </a>
-            </h1>
-          </div>
-          <div class="chatting">
-            <div class="says">
-              <p>
-                2020.10.30 オープン
-                <br>
-                オープン記念 送料無料
-              </p>
-            </div>
-          </div>
-        </div>
-        <ul class="gb-menu">
-          <li><a class="js-gb-menu-item" href="products/" target="_self">Items<span>-商品一覧-</span></a></li>
-          <li><a class="js-gb-menu-item" href="#" target="_self">Concept<span>-こだわり-</span></a></li>
-          <li><a class="js-gb-menu-item" href="#" target="_self">Cart<span>-ショッピングカート-</span></a></li>
-          <li><a class="js-gb-menu-item" href="#" target="_self">Login<span>-会員ログイン-</span></a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<?php include(dirname(__FILE__).'/assets/_inc/_header.html'); ?>
+
   <main>
     <section class="fv">
       <div class="fv__pic fv__pic--01"></div>
@@ -55,8 +8,8 @@
           <h2 class="fv-box__title">CHEESE DELIVERY</h2>
           <p class="fv-box__text">もっと身近に<br>チーズのある生活</p>
           <div class="fv-box__btns">
-            <a class="fv-box__btn btn btn--ok" href="#">商品一覧</a>
-            <a class="fv-box__btn btn btn--back" href="#">お試しセット</a>
+            <a class="fv-box__btn btn btn--ok" href="/products/">商品一覧</a>
+            <a class="fv-box__btn btn btn--back" href="/products/product/">お試しセット</a>
           </div>
         </div>
       </div>
@@ -72,7 +25,7 @@
               世界から厳選したチーズを食卓に届けたい。」
               こんな思いからRICHEESE(リッチーズ)は
               ２０２０年にスタートしました。</p>
-            <p class="introduce-box__image" ><img src="assets/image/common/intro01@2x.jpg" alt=""></p>
+            <p class="introduce-box__image" ><img src="/assets/image/common/intro01@2x.jpg" alt=""></p>
           </div>
         </div>
         <div class="introduce__content">
@@ -82,7 +35,7 @@
               世界から厳選したチーズを食卓に届けたい。」
               こんな思いから○○○(○○○)は
               ２０２０年にスタートしました。</p>
-            <img class="introduce-box__image" src="assets/image/common/intro02@2x.jpg" alt="">
+            <img class="introduce-box__image" src="/assets/image/common/intro02@2x.jpg" alt="">
           </div>
         </div>
       </div>
@@ -92,31 +45,31 @@
         <h2 class="part-of-item__heading section-heading">人気のコース</h2>
         <ul class="part-of-item__list">
           <li class="topitem-card">
-            <p class="topitem-card__image"><img src="assets/image/product-picture/item-sample01@2x.jpg" alt=""></p>
+            <p class="topitem-card__image"><img src="/assets/image/product-picture/item-sample01@2x.jpg" alt=""></p>
             <h3 class="topitem-card__title">モッツァレラチーズ</h3>
             <p class="topitem-card__price label label--price">2,000 yen</p>
-            <a class="topitem-card__btn btn btn--detail" href="#">詳細</a>
+            <a class="topitem-card__btn btn btn--detail" href="/products/product/">詳細</a>
           </li>
           <li class="topitem-card">
-            <p class="topitem-card__image"><img src="assets/image/product-picture/item-sample02@2x.jpg" alt=""></p>
+            <p class="topitem-card__image"><img src="/assets/image/product-picture/item-sample02@2x.jpg" alt=""></p>
             <h3 class="topitem-card__title">モッツァレラチーズ</h3>
             <p class="topitem-card__price label label--price">2,000 yen</p>
-            <a class="topitem-card__btn btn btn--detail" href="#">詳細</a>
+            <a class="topitem-card__btn btn btn--detail" href="/products/product/">詳細</a>
           </li>
           <li class="topitem-card">
-            <p class="topitem-card__image"><img src="assets/image/product-picture/item-sample03@2x.jpg" alt=""></p>
+            <p class="topitem-card__image"><img src="/assets/image/product-picture/item-sample03@2x.jpg" alt=""></p>
             <h3 class="topitem-card__title">モッツァレラチーズ</h3>
             <p class="topitem-card__price label label--price">2,000 yen</p>
-            <a class="topitem-card__btn btn btn--detail" href="#">詳細</a>
+            <a class="topitem-card__btn btn btn--detail" href="/products/product/">詳細</a>
           </li>
           <li class="topitem-card">
-            <p class="topitem-card__image"><img src="assets/image/product-picture/item-sample04@2x.jpg" alt=""></p>
+            <p class="topitem-card__image"><img src="/assets/image/product-picture/item-sample04@2x.jpg" alt=""></p>
             <h3 class="topitem-card__title">モッツァレラチーズ</h3>
             <p class="topitem-card__price label label--price">2,000 yen</p>
-            <a class="topitem-card__btn btn btn--detail" href="#">詳細</a>
+            <a class="topitem-card__btn btn btn--detail" href="/products/product/">詳細</a>
           </li>
         </ul>
-        <a class="part-of-item__btn btn btn--ok" href="#">商品一覧を見る</a>
+        <a class="part-of-item__btn btn btn--ok" href="/products/">商品一覧を見る</a>
       </div>
     </section>
     <section class="member">
@@ -124,28 +77,28 @@
         <h2 class="member__heading section-heading">メンバー紹介</h2>
         <ul class="member__list">
           <li class="profile-card">
-            <p class="profile-card__tab-image"><img src="assets/image/common/member01-tab@2x.jpg" alt=""></p>
-            <p class="profile-card__pc-image"><img src="assets/image/common/member01-pc@2x.jpg" alt=""></p>
+            <p class="profile-card__tab-image"><img src="/assets/image/common/member01-tab@2x.jpg" alt=""></p>
+            <p class="profile-card__pc-image"><img src="/assets/image/common/member01-pc@2x.jpg" alt=""></p>
             <div class="profile-card__contents">
               <p class="profile-card__position">Buyer / Owner</p>
               <h3 class="profile-card__name">Yui<br>Hashimoto</h3>
-              <p class="profile-card__image"><img src="assets/image/common/member01-sp@2x.jpg" alt=""></p>
+              <p class="profile-card__image"><img src="/assets/image/common/member01-sp@2x.jpg" alt=""></p>
               <p class="profile-card__text">レストラン勤務時代にチーズの魅力に取り憑かれた後、世界のチーズを求めて旅に出ました。<br>
                 世界で出会ったチーズを日本の食卓に届けるために○○○を立ち上げ、
                 今日も世界のどこかでチーズを選んでいます。</p>
-                <a class="profile-card__btn btn btn--detail" href="#">オーナーおすすめ商品</a>
+                <a class="profile-card__btn btn btn--detail" href="/products/product/">オーナーおすすめ商品</a>
             </div>
           </li>
           <li class="profile-card">
-            <p class="profile-card__tab-image"><img src="assets/image/common/member02-tab@2x.jpg" alt=""></p>
-            <p class="profile-card__pc-image"><img src="assets/image/common/member02-pc@2x.jpg" alt=""></p>
+            <p class="profile-card__tab-image"><img src="/assets/image/common/member02-tab@2x.jpg" alt=""></p>
+            <p class="profile-card__pc-image"><img src="/assets/image/common/member02-pc@2x.jpg" alt=""></p>
             <div class="profile-card__contents">
               <p class="profile-card__position">Fromager</p>
               <h3 class="profile-card__name">Takuya<br>Ogawa</h3>
-              <p class="profile-card__image"><img src="assets/image/common/member02-sp@2x.jpg" alt=""></p>
+              <p class="profile-card__image"><img src="/assets/image/common/member02-sp@2x.jpg" alt=""></p>
               <p class="profile-card__text">チーズ職人養成学校「チーズアカデミー」を卒業後、オーナーと共にチーズ工房を併設するイタリアンレストランにて調理や接客を担当。<br>
                 ○○○でもモッツァレラチーズを製造。Webサイトも担当します。</p>
-                <a class="profile-card__btn btn btn--detail" href="#">職人おすすめ商品</a>
+                <a class="profile-card__btn btn btn--detail" href="/products/product/">職人おすすめ商品</a>
             </div>
           </li>
         </ul>
@@ -156,17 +109,17 @@
         <h2 class="strength__heading section-heading">○○○のこだわり</h2>
         <ul class="strength__list">
           <li class="strength-item">
-            <p class="strength-item__image"><img src="assets/image/common/strength-image01@2x.jpg" alt=""></p>
+            <p class="strength-item__image"><img src="/assets/image/common/strength-image01@2x.jpg" alt=""></p>
             <p class="strength-item__text">地元の牧場から搾りたての牛乳を直接搬入して自家製のモッツァレラチーズを作ります。<br>
               シェフのおすすめレシピも同封しておりますので、ぜひお楽しみくださいませ。</p>
           </li>
           <li class="strength-item">
-            <p class="strength-item__image"><img src="assets/image/common/strength-image02@2x.jpg" alt=""></p>
+            <p class="strength-item__image"><img src="/assets/image/common/strength-image02@2x.jpg" alt=""></p>
             <p class="strength-item__text">地元の牧場から搾りたての牛乳を直接搬入して自家製のモッツァレラチーズを作ります。<br>
               シェフのおすすめレシピも同封しておりますので、ぜひお楽しみくださいませ。</p>
           </li>
           <li class="strength-item">
-            <p class="strength-item__image"><img src="assets/image/common/strength-image03@2x.jpg" alt=""></p>
+            <p class="strength-item__image"><img src="/assets/image/common/strength-image03@2x.jpg" alt=""></p>
             <p class="strength-item__text">地元の牧場から搾りたての牛乳を直接搬入して自家製のモッツァレラチーズを作ります。<br>
               シェフのおすすめレシピも同封しておりますので、ぜひお楽しみくださいませ。</p>
           </li>
@@ -178,70 +131,26 @@
         <h2 class="new__heading section-heading">新作商品</h2>
         <ul class="new__list">
           <li class="new-item">
-            <p class="new-item__image"><img src="assets/image/product-picture/item-sample07@2x.jpg" alt="">
+            <p class="new-item__image"><img src="/assets/image/product-picture/item-sample07@2x.jpg" alt="">
             <p class="new-item__label label label--price">リコッタチーズと自家製いちぢくジャムのセット<br>２,５００ yen</p>
           </li>
           <li class="new-item">
-            <p class="new-item__image"><img src="assets/image/product-picture/item-sample08@2x.jpg" alt="">
+            <p class="new-item__image"><img src="/assets/image/product-picture/item-sample08@2x.jpg" alt="">
             <p class="new-item__label label label--price">リコッタチーズと自家製いちぢくジャムのセット<br>２,５００ yen</p>
           </li>
           <li class="new-item">
-            <p class="new-item__image"><img src="assets/image/product-picture/item-sample09@2x.jpg" alt="">
+            <p class="new-item__image"><img src="/assets/image/product-picture/item-sample09@2x.jpg" alt="">
             <p class="new-item__label label label--price">リコッタチーズと自家製いちぢくジャムのセット<br>２,５００ yen</p>
           </li>
         </ul>
         <div class="new__btns">
-          <a class="btn btn--ok" href="#">商品一覧を見る</a>
-          <a class="btn btn--back" href="#">商品一覧を見る</a>
+          <a class="btn btn--ok" href="/products/">商品一覧を見る</a>
+          <a class="btn btn--back" href="/products/product/">商品一覧を見る</a>
         </div>
       </div>
     </section>
-    <!-- <a class="btn btn--ok" href="#">商品一覧を見る</a>
-    <a class="btn btn--back" href="#">商品一覧を見る</a>
-    <a class="btn btn--detail" href="#">商品一覧を見る</a>
-    <a class="btn btn--operationcart" href="#">商品一覧を見る</a>
-    <p class="label label--price">2,000 yen</p>
-    <p class="label label--current">選択</p>
-    <p class="label label--not-active">未選択</p> -->
-
   </main>
-  <footer>
-    <div class="footer-inner">
-      <div class="footer-items">
-        <a href="#">
-          <p class="footer-icon"><img src="" alt=""></p>
-          <p class="footer-logo"><img src="" alt=""></p>
-        </a>
-      </div>
-      <ul class="footer-list">
-        <li class="footer-contents">
-          <input type="checkbox" id="accordion-site-map">
-          <label for="accordion-site-map"><p>Site Map</p></label>
-          <ul class="content-list">
-            <li><a href="#">商品一覧</a></li>
-            <li><a href="#">コンセプト</a></li>
-          </ul>
-        </li>
-        <li class="footer-contents">
-          <input type="checkbox" id="accordion-works">
-          <label for="accordion-works"><p>作ってる人</p></label>
-          <ul class="content-list">
-            <li><a href="#">オーナー</a></li>
-            <li><a href="#">チーズ職人</a></li>
-          </ul>
-        </li>
-        <li id="about" class="footer-contents">
-          <input type="checkbox" id="accordion-shopping">
-          <label for="accordion-shopping"><p>Shopping</p></label>
-          <ul class="content-list">
-            <li><a href="#">カートを見る</a></li>
-            <li><a href="#">会員ログイン</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <p class="copyright">©チーズの通販サイト</p>
-  </footer>
+  <?php include(dirname(__FILE__).'/assets/_inc/_footer.html'); ?>
 </body>
 <script src="assets/js/hamburger-toggle.js"></script>
 </html>

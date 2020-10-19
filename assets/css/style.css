@@ -247,14 +247,29 @@ img {
 }
 
 .header .header-inner .product-logo {
-  font-family: AmericanTypewriter, serif;
   padding-left: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header .header-inner .product-logo a {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-right: 16px;
+}
+
+.header .header-inner .product-logo a img {
+  height: 60px;
+  width: auto;
+}
+
+.header .header-inner .product-logo p {
+  font-family: AmericanTypewriter, serif;
   color: #fff;
-  font-size: 1.8rem;
-  display: block;
+  font-size: 2.4rem;
   line-height: 60px;
 }
 
@@ -359,16 +374,6 @@ img {
   border-radius: 1.2rem;
   background: #D5EEFF;
   position: relative;
-}
-
-.header .header-inner nav.header__nav-top .balloon .chatting .says:after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 30%;
-  left: -24px;
-  border: 12px solid transparent;
-  border-right: 12px solid #D5EEFF;
 }
 
 .header .header-inner nav.header__nav-top .balloon .chatting .says p {

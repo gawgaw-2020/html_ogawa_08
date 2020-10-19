@@ -1,52 +1,5 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ページタイトル</title>
-  <link rel="stylesheet" href="../../assets/css/style.css">
-</head>
-<body>
-  <header class="header">
-    <div class="header-inner">
-      <div class="product-logo">
-        <a href="/" target="_self">(仮)チーズの通販サイト</a>
-      </div>
-      <!-- Navigation toggle button for Smartphone-->
-      <div class="ham" id="ham">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav id="menu" class="header__nav-top">
-        <div class="balloon">
-          <div class="faceicon">
-            <h1  class="product-logo-sp">
-              <a href="/" target="_self">
-                <img alt="お店のロゴ" src="../../assets/image/common/kv-pc.jpg">
-              </a>
-            </h1>
-          </div>
-          <div class="chatting">
-            <div class="says">
-              <p>
-                2020.10.30 オープン
-                <br>
-                オープン記念 送料無料
-              </p>
-            </div>
-          </div>
-        </div>
-        <ul class="gb-menu">
-          <li><a class="js-gb-menu-item" href="products/" target="_self">Items<span>-商品一覧-</span></a></li>
-          <li><a class="js-gb-menu-item" href="#" target="_self">Concept<span>-こだわり-</span></a></li>
-          <li><a class="js-gb-menu-item" href="#" target="_self">Cart<span>-ショッピングカート-</span></a></li>
-          <li><a class="js-gb-menu-item" href="#" target="_self">Login<span>-会員ログイン-</span></a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<?php include(dirname(__FILE__) . '/../../assets/_inc/_header.html'); ?>
+
   <main>
     <section class="detail">
       <div class="section-inner">
@@ -98,43 +51,7 @@
       </div>
     </section>
   </main>
-  <footer>
-    <div class="footer-inner">
-      <div class="footer-items">
-        <a href="#">
-          <p class="footer-icon"><img src="" alt=""></p>
-          <p class="footer-logo"><img src="" alt=""></p>
-        </a>
-      </div>
-      <ul class="footer-list">
-        <li class="footer-contents">
-          <input type="checkbox" id="accordion-site-map">
-          <label for="accordion-site-map"><p>Site Map</p></label>
-          <ul class="content-list">
-            <li><a href="#">商品一覧</a></li>
-            <li><a href="#">コンセプト</a></li>
-          </ul>
-        </li>
-        <li class="footer-contents">
-          <input type="checkbox" id="accordion-works">
-          <label for="accordion-works"><p>作ってる人</p></label>
-          <ul class="content-list">
-            <li><a href="#">オーナー</a></li>
-            <li><a href="#">チーズ職人</a></li>
-          </ul>
-        </li>
-        <li id="about" class="footer-contents">
-          <input type="checkbox" id="accordion-shopping">
-          <label for="accordion-shopping"><p>Shopping</p></label>
-          <ul class="content-list">
-            <li><a href="#">カートを見る</a></li>
-            <li><a href="#">会員ログイン</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <p class="copyright">©チーズの通販サイト</p>
-  </footer>
+  <?php include(dirname(__FILE__) . '/../../assets/_inc/_footer.html'); ?>
 </body>
 <script src="../../assets/js/hamburger-toggle.js"></script>
 </html>

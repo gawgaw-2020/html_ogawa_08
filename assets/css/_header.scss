@@ -8,12 +8,20 @@
     display: flex;
     position: relative;
     .product-logo {
-      font-family: AmericanTypewriter, serif;
       padding-left: 16px;
+      display: flex;
       a {
+        user-select: none;
+        margin-right: 16px;
+        img {
+          height: 60px;
+          width: auto;
+        }
+      }
+      p {
+        font-family: AmericanTypewriter, serif;
         color: $color-header__text;
-        font-size: 1.8rem;
-        display: block;
+        font-size: 2.4rem;
         line-height: 60px;
       }
     }
@@ -95,15 +103,6 @@
             border-radius: 1.2rem;
             background: #D5EEFF;
             position: relative;
-            &:after {
-              content: "";
-              display: inline-block;
-              position: absolute;
-              top: 30%;
-              left: -24px;
-              border: 12px solid transparent;
-              border-right: 12px solid #D5EEFF;
-            }
             p {
               font-size: 1.4rem;
               padding: 1rem 1.6rem;
