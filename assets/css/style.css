@@ -266,10 +266,10 @@ img {
   width: auto;
 }
 
-.header .header-inner .product-logo p {
+.header .header-inner .product-logo p > a {
   font-family: AmericanTypewriter, serif;
   color: #fff;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   line-height: 60px;
 }
 
@@ -345,7 +345,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   padding: 48px 0 0;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 
 .header .header-inner nav.header__nav-top .balloon .faceicon {
@@ -366,11 +366,12 @@ img {
 }
 
 .header .header-inner nav.header__nav-top .balloon .chatting {
-  width: 85%;
+  width: 80%;
   padding: 1.6rem 1.6rem;
 }
 
 .header .header-inner nav.header__nav-top .balloon .chatting .says {
+  max-width: 400px;
   border-radius: 1.2rem;
   background: #D5EEFF;
   position: relative;
@@ -430,6 +431,9 @@ img {
   }
   .header .header-inner .product-logo {
     width: 400px;
+  }
+  .header .header-inner .product-logo p > a {
+    font-size: 2.4rem;
   }
   .header .header-inner .ham {
     display: none;
